@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        desktop: "url('/src/assets/images/bg-shorten-desktop.svg')",
+        mobile: "url('/src/assets/images/bg-shorten-mobile.svg')",
+      },
       colors: {
         cyan: "hsl(180, 66%, 49%)",
         darkViolet: "hsl(257, 27%, 26%)",

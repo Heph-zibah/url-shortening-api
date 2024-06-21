@@ -2,10 +2,10 @@
 </script>
 
 <template>
-    <footer class="bg-darkViolet">
+    <footer class="bg-veryDarkViolet">
         <div class="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 md:p-10 lg:px-20 lg:py-10 xl:max-w-[85rem] xl:mx-auto text-center md:text-start">
             <div>
-                <h1 class="text-2xl font-bold mb-5 md:mb-0">Shortly</h1>
+                <h4 class="text-2xl font-bold mb-5 md:mb-0 cursor-pointer">Shortly</h4>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-sm gap-y-5 my-7 md:my-0">
                 <ul class="space-y-3">
@@ -28,7 +28,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="flex items-start justify-center md:justify-end gap-3">
+            <div class="flex items-start justify-center md:justify-end gap-5">
                 <img src="../assets/images/icon-facebook.svg" alt="facebook logo" class="cursor-pointer">
                 <img src="../assets/images/icon-twitter.svg" alt="twitter logo" class="cursor-pointer">
                 <img src="../assets/images/icon-pinterest.svg" alt="pininterest logo" class="cursor-pointer">

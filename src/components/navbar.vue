@@ -23,6 +23,18 @@ onMounted(() => {
 onUnmounted(() => {
     document.removeEventListener('click', closeDropdown);
 });
+
+const handleClickOutside = (event) => {
+  const isClickInsideDropdown = event.target.closest('.dropdown') !== null;
+
+  if (!isClickInsideDropdown) {
+    dropdown.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
 </script>
 
 <template>
@@ -46,6 +58,6 @@ onUnmounted(() => {
                 </div> 
             </div>
         </div>
-        <DropdownMenu v-if="dropdown" class="dropdown-menu"/>
+        <DropdownMenu v-if="dropdown" class="dropdown-menu dropdown"/>
     </nav>
 </template>
